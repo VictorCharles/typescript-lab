@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "app/dist/js", // Pasta onde o js será 'jogado'
+        "target": "ES6", // JS alvo
+        "noEmitOnError": true, // não compila em JS se tiver algum erro
+        "noImplicitAny": true, //faz com que as variaveis não sejam declaradas implicitamente como any
+        "removeComments": true, // remove comentarios da compilação
+        "strictNullChecks": true, // checa se todos as instancias e podem ter o tipo null e não permite compilação se sim
+        "experimentalDecorators": true, // permite a utilização de decorators feitos por users
+        "sourceMap": true // Para debugar e utilizar o debug mode no navegador, habilita a criação de maps
+    },
+    "include": [
+        "app/src/**/*"
+    ] // O include inclui as pastas da onde deve buscar arquivos a serem compilados
+    // ** = todos arquivos e pastas
+    // * - todos os arquivos
+}
